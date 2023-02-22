@@ -8,7 +8,8 @@ Project goal is to deploy supervised machine learning models to the Adult datase
 
 ## Data
 ### Data Source
-The dataset was collected from UCI Machine Learning Repository at this link: https://archive.ics.uci.edu/ml/datasets/Census+Income.
+The dataset was collected from UCI Machine Learning Repository at this link: 
+https://archive.ics.uci.edu/ml/datasets/Census+Income.
 Citation: @misc{Kohavi:1994 , author = “Kohavi, Ronny and Becker, Barry”, year = “2017”, title = “{UCI} Machine Learning Repository”, url = “http://archive.ics.uci.edu/ml”, institution = “Silicon Graphics, Irvine, Data Mining and Visualization” }
 ### Data Description
 Data Set Characteristics: Multivariate Number of Instances: 48842 Area: Social Attribute Characteristics: Categorical, Integer Number of Attributes: 14 Date Donated: 1996-05-01 Associated
