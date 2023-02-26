@@ -1,21 +1,86 @@
 # Supervised Machine Learning of Adult Dataset
 
-## Project Topic
-### Task
-Project task is to develop and evaluate binary classification models. The learning includes data cleaning, management, analysis, visualization, feature engineering, model development and improvement. The models of interest are Logistic Regression, Random Forest and Gaussian Naive Bayes.
-### Goals
-Project goal is to deploy supervised machine learning models to the Adult dataset from UCI Machine Learning Repository and evaluate the performance of the predictive algorithms. Secondary goals are to clean the data, run exploratory data analysis with statistical analyses and visualization, and iterate and improve the model performance. As this is a binary classification problem, feature engineering with proper metric evaluation would be important. These activities are crucial for any machine learning task and the subsequent skills development.
-
-## Data
-### Data Source
-The dataset was collected from UCI Machine Learning Repository at this link: 
-https://archive.ics.uci.edu/ml/datasets/Census+Income.
-Citation: @misc{Kohavi:1994 , author = “Kohavi, Ronny and Becker, Barry”, year = “2017”, title = “{UCI} Machine Learning Repository”, url = “http://archive.ics.uci.edu/ml”, institution = “Silicon Graphics, Irvine, Data Mining and Visualization” }
-### Data Description
-Data Set Characteristics: Multivariate Number of Instances: 48842 Area: Social Attribute Characteristics: Categorical, Integer Number of Attributes: 14 Date Donated: 1996-05-01 Associated
-Tasks: Classification Missing Values? Yes
-### Data Attributes
-Listing of attributes:
-50K, <=50K.
-age: continuous. workclass: Private, Self-emp-not-inc, Self-emp-inc, Federal-gov, Local-gov, State-gov, Without-pay, Never-worked. fnlwgt: continuous. education: Bachelors, Some-college, 11th, HS-grad, Prof-school, Assoc-acdm, Assoc-voc, 9th, 7th-8th, 12th, Masters, 1st-4th, 10th, Doctorate, 5th-6th, Preschool. education-num: continuous. marital-status: Married-civ-spouse, Divorced, Never-married, Separated, Widowed, Married-spouse-absent, Married-AF-spouse. occupation: Tech-support, Craft-repair, Other-service, Sales, Exec-managerial, Prof-specialty, Handlers-cleaners, Machine-op-inspct, Adm-clerical, Farming-fishing, Transport-moving, Priv-house-serv,
-Protective-serv, Armed-Forces. relationship: Wife, Own-child, Husband, Not-in-family, Other-relative, Unmarried. race: White, Asian-Pac-Islander, Amer-Indian-Eskimo, Other, Black. sex: Female, Male. capital-gain: continuous. capital-loss: continuous. hours-per-week: continuous. native-country: United-States, Cambodia, England, Puerto-Rico, Canada, Germany, Outlying-US(Guam-USVI-etc), India, Japan, Greece, South, China, Cuba, Iran, Honduras, Philippines, Italy, Poland, Jamaica, Vietnam, Mexico, Portugal, Ireland, France, Dominican-Republic, Laos, Ecuador, Taiwan, Haiti, Columbia, Hungary, Guatemala, Nicaragua, Scotland, Thailand, Yugoslavia, El-Salvador, Trinadad&Tobago, Peru, Hong, Holand-Netherlands.
+# Contents
+#### 1 Project Topic
+##### 1.1 Task
+##### 1.2 Goals
+#### 2 Data
+##### 2.1 Data Source
+##### 2.2 Data Description
+##### 2.3 Data Attributes
+##### 2.4 Data Summary
+2.4.1 Missing Values and Loading the Data Set
+<br>2.4.2 Removing ‘fnlwgt’
+<br>2.4.3 Data Summary Statistics
+#### 3 Data Cleaning 
+##### 3.1 Data Type Change
+##### 3.2 Whitespace Removal
+##### 3.3 Missing Values
+##### 3.4 Check of Imbalanced Data Set 
+3.4.1 Cleaning target variable
+##### 3.5 Conclusion of Data Cleaning
+#### 4 Exploratory Data Analysis
+##### 4.1 Univariate Analysis
+4.1.1 Histogram of age
+<br>4.1.2 Histogram of hours worked per week
+<br>4.1.3 Histogram of capital gain
+<br>4.1.4 Histogram of capital loss
+<br>4.1.5 Histogram of education
+<br>4.1.6 Histogram of workclass
+<br>4.1.7 Histogram of education number
+<br>4.1.8 Histogram of marital status
+<br>4.1.9 Histogram of occupation
+<br>4.1.10 Histogram of relationship
+<br>4.1.11 Histogram of race
+<br>4.1.12 Histogram of sex
+<br>4.1.13 Histogram of native country
+##### 4.2 Bivariate Analysis
+4.2.1 Relationship between age and annual income
+<br>4.2.2 Relationship between capital gain and annual income
+<br>4.2.3 Relationship between capital loss and annual income
+<br>4.2.4 Feature Engineering
+<br>4.2.5 Relationship between delta capital and annual income
+<br>4.2.6 Relationship between hours per week and annual income
+<br>4.2.7 Relationship between workclass and annual income
+<br>4.2.8 Relationship between education and annual income
+<br>4.2.9 Relationship between education num and annual income
+<br>4.2.10 Relationship between marital status and annual income
+<br>4.2.11 Relationship between occupation and annual income
+<br>4.2.12 Relationship between relationship and annual income
+<br>4.2.13 Relationship between race and annual income
+<br>4.2.14 Relationship between sex and annual income
+<br>4.2.15 Relationship between native country and annual income
+##### 4.3 Multivariate Analysis
+4.3.1 Correlation Matrix
+<br>4.3.2 Multivariate Categorical Analysis
+##### 4.4 Conclusion of Exploratory Data Analysis
+#### 5 Models
+##### 5.1 Marital status and Relationship: Multicollinearity?
+##### 5.2 Encoding categorical variables
+##### 5.3 Standardizing Feature Set
+##### 5.4 Multicollinearity Test
+##### 5.5 SMOTE: Synthetic Minority Over-sampling Technique
+##### 5.6 Train-Test split
+##### 5.7 Evaluation Metric
+5.7.1 Logistic Regression
+<br>5.7.2 Logistic Regression using SMOTE
+<br>5.7.3 Random Forest
+<br>5.7.4 Random Forest using SMOTE
+<br>5.7.5 Gaussian Naive Bayes Classifier
+<br>5.7.6 Gaussian Naive Bayes Classifier using SMOTE
+#### 6 Results and Analysis
+##### 6.1 Logistic Regression
+6.1.1 Without SMOTE
+<br>6.1.2 With SMOTE
+<br>6.1.3 AUC
+##### 6.2 Random Forest
+6.2.1 Without SMOTE
+<br>6.2.2 With SMOTE
+<br>6.2.3 AUC
+##### 6.3 Gaussian Naive Bayes
+6.3.1 Without SMOTE
+<br>6.3.2 With SMOTE
+<br>6.3.3 AUC
+#### 7 Discussion and Conclusion
+7.1 Discussion
+<br>7.2 Conclusion
