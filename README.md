@@ -1,11 +1,11 @@
 # Supervised Machine Learning of Adult Dataset
-
+<br><br>
 # Contents
-
+<br>
 ## 1 Project Topic
 ### 1.1 Task
 ### 1.2 Goals
-
+<br>
 ## 2 Data
 ### 2.1 Data Source
 ### 2.2 Data Description
@@ -14,7 +14,7 @@
 2.4.1 Missing Values and Loading the Data Set
 <br>2.4.2 Removing ‘fnlwgt’
 <br>2.4.3 Data Summary Statistics
-
+<br>
 ## 3 Data Cleaning 
 ### 3.1 Data Type Change
 ### 3.2 Whitespace Removal
@@ -22,7 +22,7 @@
 ### 3.4 Check of Imbalanced Data Set 
 3.4.1 Cleaning target variable
 ### 3.5 Conclusion of Data Cleaning
-
+<br>
 ## 4 Exploratory Data Analysis
 ### 4.1 Univariate Analysis
 4.1.1 Histogram of age
@@ -58,7 +58,7 @@
 4.3.1 Correlation Matrix
 <br>4.3.2 Multivariate Categorical Analysis
 ### 4.4 Conclusion of Exploratory Data Analysis
-
+<br>
 ## 5 Models
 ### 5.1 Marital status and Relationship: Multicollinearity?
 ### 5.2 Encoding categorical variables
@@ -73,7 +73,7 @@
 <br>5.7.4 Random Forest using SMOTE
 <br>5.7.5 Gaussian Naive Bayes Classifier
 <br>5.7.6 Gaussian Naive Bayes Classifier using SMOTE
-
+<br>
 ## 6 Results and Analysis
 ### 6.1 Logistic Regression
 6.1.1 Without SMOTE
@@ -87,7 +87,7 @@
 6.3.1 Without SMOTE
 <br>6.3.2 With SMOTE
 <br>6.3.3 AUC
-
+<br>
 ## 7 Discussion and Conclusion
 7.1 Discussion
 <br>7.2 Conclusion
