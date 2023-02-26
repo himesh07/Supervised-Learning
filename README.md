@@ -1,4 +1,4 @@
-# Supervised Machine Learning of Adult Dataset
+# Supervised Machine Learning on Adult Dataset
 
 # Contents
 
