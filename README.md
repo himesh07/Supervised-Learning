@@ -1,4 +1,3 @@
-# Supervised Machine Learning on Adult Dataset
 ![image](https://user-images.githubusercontent.com/108557163/221387349-96c56da5-e0e9-4a6b-9e45-24448b3fd35f.png)
 
 # Contents
