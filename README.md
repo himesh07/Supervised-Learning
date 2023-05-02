@@ -1,5 +1,6 @@
 ![image](https://user-images.githubusercontent.com/108557163/221387349-96c56da5-e0e9-4a6b-9e45-24448b3fd35f.png)
 
+
 This project is a study of Supervised Machine Learning using the Adult dataset. The goal of the study is to build a model that can predict whether an individual earns more than $50,000 per year based on various demographic and employment-related features.
 
 Here's a brief overview of what the report covers:
