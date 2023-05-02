@@ -1,5 +1,22 @@
 ![image](https://user-images.githubusercontent.com/108557163/221387349-96c56da5-e0e9-4a6b-9e45-24448b3fd35f.png)
 
+This project is a study of Supervised Machine Learning using the Adult dataset. The goal of the study is to build a model that can predict whether an individual earns more than $50,000 per year based on various demographic and employment-related features.
+
+Here's a brief overview of what the report covers:
+
+Introduction: This section provides an overview of the study and the dataset used. The adult dataset contains information on over 32,000 individuals, including their age, education, occupation, and marital status.
+
+Data preparation: This section describes how the data was prepared for analysis, including cleaning and formatting. The data is also split into a training set and a testing set.
+
+Model building: This section describes how the model was built using various supervised machine learning algorithms, including logistic regression, decision trees, and random forests.
+
+Model evaluation: This section evaluates the performance of the different models based on various metrics such as accuracy, precision, recall, and F1 score. The best performing model is identified and its predictions are compared to the actual values in the testing set.
+
+Conclusion: This section summarizes the key findings of the study and provides recommendations for future work.
+
+Overall, the report provides a comprehensive overview of the process of supervised machine learning, including data preparation, model building, and model evaluation. The report also demonstrates how the techniques can be applied to a real-world problem, namely predicting income based on demographic and employment-related features.
+
+
 # Contents
 
 ## 1 Project Topic
